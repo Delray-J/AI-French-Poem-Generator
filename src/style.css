@@ -54,6 +54,10 @@ body {
     padding: 14px 24px;
   }
   
+  .poem strong {
+    color: #885df1;
+  }
+
   .poem {
     font-size: 16px;
     background-color: #fff;
