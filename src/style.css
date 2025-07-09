@@ -1,10 +1,12 @@
 body {
-    background-color: #f9f7fe;
-    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
   }
-  
-  a {
-    color: #885df1;
+
+   a {
+    color: #f6318c;
+    font-size: 10px;
   }
   
   .container {
@@ -18,34 +20,51 @@ body {
   
   h1 {
     text-align: center;
-    font-weight: 800;
+    font-weight: 900 bolder;
     font-size: 36px;
     line-height: 1.5;
-    color: #272044;
+    color: #f6378f;
   }
+
+  .form-container {
+    background-color: #ffebeb;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+  
   
   form {
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-    border-radius: 10px;
     display: flex;
-    margin-bottom: 30px;
+   }
+
+  .hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 13px;
+    font-weight: 300;
   }
   
   .instructions {
     padding: 16px;
-    border: 1px solid rgba(39, 33, 66, 0.5);
+    border: 1px solid #ffc1c8;
     width: 80%;
     font-size: 16px;
     border-radius: 50px;
     line-height: 20px;
-    color: #272044;
+    color: #f6378f;
   }
-  
+
+  .instructions:focus {
+    border: 2px solid #f6378f;
+    outline: none;
+  }
+
   .submit-button {
     margin-left: 10px;
-    background: #885df1;
+    background: #f48db4;
     color: white;
     border: none;
     width: 150px;
@@ -58,17 +77,43 @@ body {
     color: #885df1;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .poem {
-    font-size: 16px;
-    background-color: #fff;
+    font-size: 20px;
+    background-color: #ffebeb;
     padding: 20px;
     line-height: 2;
-    border-left: 3px solid #885df1;
+    border-left: 3px solid #f48db4;
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+    color: #3c0303 ;
   }
   
   footer {
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     margin-top: 30px;
+    font-weight: 400;
+    color: #3c0303;
+  }
+
+  footer a {
+    font-size: inherit;
+  }
+
+  .generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
   }
